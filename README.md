@@ -105,6 +105,7 @@ pnpm --filter @erp/api prisma:seed
 pnpm --filter @erp/shared build
 pnpm --filter @erp/api build
 pnpm --filter @erp/web build
+node scripts/copy-web-dist.mjs
 ```
 
 ## النسخ الاحتياطي

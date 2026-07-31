@@ -23,7 +23,7 @@ services:
       - key: JWT_REFRESH_EXPIRES_IN
         value: 30d
       - key: CORS_ORIGIN
-        sync: false
+        value: https://shadi2234-1qjx8rvu4-shadfi.vercel.app
       - key: INITIAL_ADMIN_NAME
         value: System Administrator
       - key: INITIAL_ADMIN_EMAIL
