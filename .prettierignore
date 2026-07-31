@@ -1,0 +1,8 @@
+node_modules
+dist
+coverage
+apps/**/dist
+packages/**/dist
+apps/api/prisma/dev.db
+apps/api/prisma/test.db
+apps/api/public/uploads

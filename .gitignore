@@ -1,0 +1,15 @@
+node_modules
+dist
+.env
+.env.*
+!.env.example
+coverage
+*.log
+apps/*/dist
+apps/*/.vite
+apps/*/node_modules
+packages/*/dist
+packages/*/node_modules
+prisma/migrations
+public/uploads
+

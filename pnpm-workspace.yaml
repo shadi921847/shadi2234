@@ -1,0 +1,6 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+overrides:
+  brace-expansion: 5.0.9
+  uuid: 11.1.1

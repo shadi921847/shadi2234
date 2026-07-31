@@ -1,0 +1,25 @@
+{
+  "name": "construction-erp",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.14.0",
+  "scripts": {
+    "dev": "pnpm -r --parallel --filter @erp/api --filter @erp/web dev",
+    "dev:api": "pnpm --filter @erp/api dev",
+    "dev:web": "pnpm --filter @erp/web dev",
+    "build": "pnpm --filter @erp/shared build && pnpm --filter @erp/api build && pnpm --filter @erp/web build",
+    "check": "pnpm --filter @erp/shared build && pnpm --filter @erp/api build && pnpm --filter @erp/web build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "audit": "pnpm audit --prod",
+    "test": "pnpm --filter @erp/shared test && pnpm --filter @erp/api test",
+    "test:e2e": "pnpm --filter @erp/web test:e2e",
+    "db:generate:pg": "pnpm --filter @erp/api prisma:generate:pg",
+    "db:generate:sqlite": "pnpm --filter @erp/api prisma:generate:sqlite",
+    "db:migrate:sqlite": "pnpm --filter @erp/api prisma:migrate:sqlite",
+    "db:seed": "pnpm --filter @erp/api prisma:generate:sqlite && pnpm --filter @erp/api prisma:push:sqlite && pnpm --filter @erp/api prisma:seed"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6"
+  }
+}

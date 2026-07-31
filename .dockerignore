@@ -1,0 +1,11 @@
+**/node_modules
+**/dist
+**/.turbo
+**/.vite
+**/*.log
+**/dev.db
+**/test.db
+.git
+.github
+docker-compose.override.yml
+coverage
